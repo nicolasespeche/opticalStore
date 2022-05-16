@@ -127,6 +127,9 @@ body{
     height: 300px;
 }
 
+.marcasAnimations:hover{
+    transform: translate(20px, -20px);
+}
 
 
 
