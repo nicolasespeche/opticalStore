@@ -67,7 +67,7 @@ body{
 
 }
 
-.hero h2{
+.hero h1{
     margin-bottom: 20px;
     font-size: 50px;
     color:rgba(253, 252, 251, 0.644);
@@ -117,6 +117,11 @@ body{
 
 .marca div div{
     width: 300px;
+    transition: 1s;
+}
+
+.marca div div:hover{
+    transform: scale(1.1);
 }
 
 .marca div div h3{
@@ -127,11 +132,6 @@ body{
     width: 300px;
     height: 300px;
 }
-
-.marcasAnimations:hover{
-    transform: translate(20px, -20px);
-}
-
 
 
 
@@ -185,7 +185,7 @@ footer{
 
 /* ARMAZONES */
 
-.cards h2{
+.cards h1{
     text-align: center;
     margin-bottom: 100px;
     font-size: 40px;
@@ -207,6 +207,11 @@ footer{
     border-radius: 10px;
 }
 
+.cards div div:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
 .cards div div h3{
     text-align: center;
     font-size: 20px;
@@ -220,7 +225,7 @@ footer{
 
 /* PROBLEMAS DE VISION */
 
-.vision h2{
+.vision h1{
     font-family: "oswald",sans-serif;
     font-size: 40px;
     text-align: center;
@@ -271,7 +276,7 @@ footer{
 /* CONTACTOLOGIA */
 
 
-.contactologia h2{
+.contactologia h1{
     font-family: "oswald",sans-serif;
     font-size: 40px;
     text-align: center;
