@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Document</title>
     
@@ -46,7 +47,7 @@
             </section>
 
             <!-- formulario de contacto -->
-            <section class="formulario">
+            <!-- <section class="formulario"> 
                 <article>
                     <form action="#">
                         <input type="text" placeholder="Nombre"><br>
@@ -78,7 +79,43 @@
                     </form>
                 </article>
             </section>
+            -->
             <!-- Cierre de formulario de contacto -->
+            <div class="formulario">
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo Electrónico</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Teléfono</label>
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>¿Qué tipo de asesoría le gustaría recibir?</option>
+                    <option value="1">Virtual</option>
+                    <option value="2">Presencial</option>
+                </select>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Producto por el que realiza la consulta</option>
+                    <option value="1">Lentes de sol</option>
+                    <option value="2">Recetas</option>
+                    <option value="3">Contactología</option>
+                </select>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                </div>
+            </div>
+            
         </main>
         <!-- Footer -->
         <footer class="footer">
@@ -107,6 +144,9 @@
             
         </footer>
         <!-- Cierre Footer -->
-</div>
+        <!-- JavaScript Bundle with Popper -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

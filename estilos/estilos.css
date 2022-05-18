@@ -45,7 +45,10 @@ body{
 
 .header nav .navBar li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size:18px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 /* FIN BARRA DE NAVEGACIÓN */
@@ -153,7 +156,8 @@ footer{
 .footerContenedor ul li a{
     padding-bottom: 10px;
     text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
 
 .footerContenedor ul{
@@ -166,20 +170,24 @@ footer{
     align-items: center;
     padding: 50px;
     
-}
-
-.redes div{
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
     
 }
 
+.redes div a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    
+}
+
+
+
 .derechosReservados{
     text-align: center;
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -322,7 +330,7 @@ footer{
     padding: 20px;
 }
 
-/* CONTACTO--FORMULARIO */
+/* CONTACTO--FORMULARIO  */
 
 .formularioTitulo{
     text-align: center;
@@ -331,6 +339,25 @@ footer{
     text-decoration: underline;
 }
 
+.formulario{
+    width: 600px;
+    margin: auto;
+    height: 500px;
+}
+
+.input-group{
+    margin-bottom: 10px;
+}
+.form-floating mb-3{
+    margin-bottom: 10px;
+}
+.form-floating {
+    margin-bottom: 10px;
+}
+.form-select{
+    margin-bottom: 10px;
+}
+/* 
 .formulario{
     border: 4px solid white;
     border-radius: 40px;
@@ -346,7 +373,7 @@ footer{
     color: black;
 }
 
-
+*/
 
 /*------MEDIA QUERIE------*/
 
