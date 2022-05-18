@@ -111,6 +111,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -362,28 +363,6 @@ footer{
     }
 }
 
-@media screen and (max-width:961px){
-
-    .marca > div{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .marca div div{
-        width: 100%;
-        text-align: center;
-    }
-
-
-    .marca div div h2{
-        width: 100%;
-    }
-
-    .marca div div img{
-        width: 100%;
-    }
-
-}
 
 
 @media screen and (max-width:1100px){
