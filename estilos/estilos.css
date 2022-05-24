@@ -10,7 +10,7 @@
 
 
 body{
-    background: linear-gradient(to bottom, #ffffff, #eae2fc, #dac4f6, #d0a5ec, #c983de, #cc80da, #cf7dd6, #d27ad2, #dc98dc, #e5b5e5, #eed2ee, #f6eff6);
+    background-color: whitesmoke;
 }
 
 .grid-container{
@@ -45,9 +45,10 @@ body{
 
 .header nav .navBar li a{
     text-decoration: none;
-    font-size:18px;
+    font-size:19px;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.313);
 }
 
 /* FIN BARRA DE NAVEGACIÓN */
@@ -105,8 +106,14 @@ body{
 }
 
 .marca h2{
+    margin: 40px 0px 40px 0px;
+    background-color: rgba(69, 1, 69, 0.599);
+    width: 100%;
+    color: rgb(218, 175, 207);
     text-align: center;
-    margin: 30px;
+    height: 60px;
+    font-size: 40px;
+    
 }
 
 .marca > div{
@@ -202,8 +209,9 @@ footer{
 .marcasLogos img{
     width: 200px;
     margin: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 3px solid rgba(240, 235, 240, 0.531);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.346);
 }
 
 .marcasLogos img:hover{
