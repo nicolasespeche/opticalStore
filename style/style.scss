@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-
+@import "generales";
+@import "variables";
 *{
     margin: 0;
     padding:0;
@@ -24,34 +25,7 @@ body{
     "footer footer"; 
 }
 
-/* BARRA DE NAVEGACIÓN */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 30px;
-    grid-area: header;
-}
-.header nav .navBar{
-    display:flex;
-    list-style-type: none;
-}
-
-.header nav .navBar li{
-    margin: 16px;
-    padding: 8px;
-}
-
-.header nav .navBar li a{
-    text-decoration: none;
-    font-size:19px;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.313);
-}
-
-/* FIN BARRA DE NAVEGACIÓN */
 
 /* SECCIÓN ACERCA DE NOSOTROS */
 
@@ -107,7 +81,7 @@ body{
 
 .marca h2{
     margin: 40px 0px 40px 0px;
-    background-color: rgba(69, 1, 69, 0.599);
+    background-color: $colortitulos;
     width: 100%;
     color: rgb(218, 175, 207);
     text-align: center;
@@ -136,58 +110,8 @@ body{
 
 
 
-
-
 /* FIN DE SECCIÓN DE MARCAS Y DESCRIPCIONES */
 
-/* FOOTER */
-
-.footer{
-    grid-area: footer;
-}
-
-footer{
-
-    margin-top: 50px;
-
-}
-
-.footerContenedor ul li a{
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-}
-
-.footerContenedor ul{
-    list-style-type: none;
-}
-
-.footerContenedor{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    
-    
-}
-
-.redes div a{
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, sans-serif;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    
-}
-
-
-
-.derechosReservados{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
 
 
 /* ARMAZONES */
@@ -222,14 +146,14 @@ footer{
     margin-bottom:5px;
     font-size: 40px;
     font-family: "oswald",sans-serif;
-    background-color: rgba(69, 1, 69, 0.599); 
+    background-color: $colortitulos;
     color: rgb(218, 175, 207);
 }
 
 /* PROBLEMAS DE VISION */
 
 .vision h1{
-    background-color: rgba(69, 1, 69, 0.599);
+    background-color: $colortitulos;
     width: 100%;
     color: rgb(218, 175, 207);
     text-align: center;
@@ -284,7 +208,7 @@ footer{
 
 
 .contactologia h1{
-    background-color: rgba(69, 1, 69, 0.599);
+    background-color: $colortitulos;
     width: 100%;
     color: rgb(218, 175, 207);
     text-align: center;
@@ -336,7 +260,7 @@ footer{
 /* CONTACTO--FORMULARIO  */
 
 .tituloContacto{
-    background-color: rgba(69, 1, 69, 0.599);
+    background-color: $colortitulos;
     width: 100%;
     color: rgb(218, 175, 207);
     text-align: center;
