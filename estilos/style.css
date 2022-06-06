@@ -195,6 +195,18 @@ body {
   font-size: 40px;
 }
 
+.marca div div {
+  width: 600px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+}
+
+.marca div div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .marca > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,18 +218,6 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.marca div div {
-  width: 600px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  text-align: center;
-}
-
-.marca div div:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 /* FIN DE SECCIÓN DE MARCAS Y DESCRIPCIONES */

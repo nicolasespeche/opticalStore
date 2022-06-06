@@ -41,23 +41,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1{
+        margin-bottom: 20px;
+        font-size: 50px;
+        color:rgba(253, 252, 251, 0.644);
+        font-family: "oswald",sans-serif;
+    }
+    p{
+        font-family:"Mukta",sans-serif;
+        font-size: 22px;
+        padding: 70px;
+        color:rgba(253, 252, 251, 0.644);
+        text-align: center;
+    }
 
 }
 
-.hero h1{
-    margin-bottom: 20px;
-    font-size: 50px;
-    color:rgba(253, 252, 251, 0.644);
-    font-family: "oswald",sans-serif;
-}
 
-.hero p{
-    font-family:"Mukta",sans-serif;
-    font-size: 22px;
-    padding: 70px;
-    color:rgba(253, 252, 251, 0.644);
-    text-align: center;
-}
 .nosotros figure img{
     border: 2px solid white;
     border-style:groove;
@@ -79,14 +79,24 @@ body{
     grid-area: main;
 }
 
-.marca h2{
-    margin: 40px 0px 40px 0px;
-    background-color: $colortitulos;
-    width: 100%;
-    color: rgb(218, 175, 207);
-    text-align: center;
-    height: 60px;
-    font-size: 40px;
+.marca{
+    h2{
+        margin: 40px 0px 40px 0px;
+        background-color: $colortitulos;
+        width: 100%;
+        color: rgb(218, 175, 207);
+        text-align: center;
+        height: 60px;
+        font-size: 40px;
+    }
+    div div{
+        width: 600px;
+        transition: 1s;
+        text-align: center;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
     
 }
 
@@ -96,17 +106,6 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-
-
-.marca div div{
-    width: 600px;
-    transition: 1s;
-    text-align: center;
-    &:hover{
-        transform: scale(1.1);
-    }
-}
-
 
 
 
@@ -205,40 +204,44 @@ body{
 /* CONTACTOLOGIA */
 
 
-.contactologia h1{
-    background-color: $colortitulos;
-    width: 100%;
-    color: rgb(218, 175, 207);
-    text-align: center;
-    height: 60px;
-    font-size: 40px;
-    font-family: "oswald",sans-serif;
+.contactologia{
+    h1{
+        background-color: $colortitulos;
+        width: 100%;
+        color: rgb(218, 175, 207);
+        text-align: center;
+        height: 60px;
+        font-size: 40px;
+        font-family: "oswald",sans-serif;
+    }
+    p{
+        font-family: "mukta",sans-serif;
+        font-size: 20px;
+        text-align: center;
+        border: 5px double rgba(110, 1, 93, 0.58);
+        margin: 20px;
+    }
+    
 }
 
-.contactologia p{
-    font-family: "mukta",sans-serif;
-    font-size: 20px;
-    text-align: center;
-    border: 5px double rgba(110, 1, 93, 0.58);
-    margin: 20px;
-}
 
 .contactologiaLista{
     margin: 150px;
     text-align: center;
-}
-.contactologiaLista h2{
-    font-family: "oswald",sans-serif;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
+    h2{
+        font-family: "oswald",sans-serif;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            margin: 20px;
+        }
+    }
 }
 
-
-.contactologiaLista  ul li{
-    list-style-type: none;
-    margin: 20px;
-}
 
 .contactologiaVideo{
     text-align: center;
