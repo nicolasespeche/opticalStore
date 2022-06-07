@@ -79,14 +79,18 @@ body{
     grid-area: main;
 }
 
+@mixin tamaño ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
 .marca{
     h2{
+        @include tamaño (100%,60px);
         margin: 40px 0px 40px 0px;
         background-color: $colortitulos;
-        width: 100%;
         color: rgb(218, 175, 207);
         text-align: center;
-        height: 60px;
         font-size: 40px;
     }
     div div{
@@ -113,11 +117,14 @@ body{
 
 /* ARMAZONES */
 
-.marcasLogos{
+.marcasYLogos{
     display: flex;
     flex-wrap:wrap;
     margin-left: 120px;
     margin-top: 80px;
+}
+.marcasLogos{
+    @extend.marcasYLogos;
     img{
         width: 200px;
         margin: 20px;

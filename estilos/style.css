@@ -38,6 +38,30 @@
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.313);
 }
 
+.btm--facebook {
+  background-color: #0d30ca;
+  border: 1px solid #0d30ca;
+  border-radius: 5px;
+  height: 20px;
+  width: 80%;
+}
+
+.btm--instagram {
+  background-color: #d633a0;
+  border: 1px solid #d633a0;
+  border-radius: 5px;
+  height: 20px;
+  width: 80%;
+}
+
+.btm--whatsapp {
+  background-color: #0bc70b;
+  border: 1px solid #0bc70b;
+  border-radius: 5px;
+  height: 20px;
+  width: 80%;
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -186,12 +210,12 @@ body {
 }
 
 .marca h2 {
+  width: 100%;
+  height: 60px;
   margin: 40px 0px 40px 0px;
   background-color: rgba(69, 1, 69, 0.599);
-  width: 100%;
   color: #daafcf;
   text-align: center;
-  height: 60px;
   font-size: 40px;
 }
 
@@ -222,7 +246,7 @@ body {
 
 /* FIN DE SECCIÓN DE MARCAS Y DESCRIPCIONES */
 /* ARMAZONES */
-.marcasLogos {
+.marcasYLogos, .marcasLogos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
