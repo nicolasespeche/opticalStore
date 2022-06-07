@@ -489,13 +489,13 @@ body {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
   .vision div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: auto;
+    width: 80%;
     margin: auto;
   }
   .vision div figure img {

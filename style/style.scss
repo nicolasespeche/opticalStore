@@ -107,8 +107,6 @@ body{
     flex-wrap: wrap;
 }
 
-
-
 /* FIN DE SECCIÓN DE MARCAS Y DESCRIPCIONES */
 
 
@@ -380,10 +378,10 @@ body{
     }
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1300px){
     .vision  div {
         flex-direction: column;
-        width: auto;
+        width: 80%;
         margin: auto;
     }
     .vision div figure img{
