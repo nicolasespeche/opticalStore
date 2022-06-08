@@ -11,10 +11,6 @@
 }
 
 
-body{
-    background-color: whitesmoke;
-}
-
 .grid-container{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -324,6 +320,4 @@ body{
 .form-select{
     margin-bottom: 10px;
 }
-
-
 

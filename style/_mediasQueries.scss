@@ -25,6 +25,7 @@
     .footerContenedor{
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
 
     .footerContenedor ul{
@@ -37,13 +38,11 @@
 
 }
 
-@media screen and (max-width:680px){
-    .hero{
-        height:auto;
-        width: 100%;
-    }
+@media screen and (max-width:590px){
 
-    
+    .hero h1{
+        font-size: 10px;
+    }
 }
 
 

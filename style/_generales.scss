@@ -12,31 +12,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: header;
-    
-    
-
-    nav .navBar{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-
-        li{
-            margin: 16px;
-            padding: 8px;
-            
-            a{
-                font-weight: lighter;
-                text-decoration: none;
-                font-size: 19px;
-                color: black;
-                font-family: 'Times New Roman', Times, serif;
-                text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.313);
-            }
-        }
-
-    }
-    
+    height: auto;
 }
 
 $redes:(
@@ -55,10 +31,15 @@ $redes:(
     }
 }
 
+body{
+    background-color: rgb(229, 226, 226);
+}
 
 .footer{
     grid-area: footer;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footerContenedor{

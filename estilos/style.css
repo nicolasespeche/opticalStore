@@ -15,27 +15,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: header;
-}
-
-.header nav .navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.header nav .navBar li {
-  margin: 16px;
-  padding: 8px;
-}
-
-.header nav .navBar li a {
-  font-weight: lighter;
-  text-decoration: none;
-  font-size: 19px;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.313);
+  height: auto;
 }
 
 .btm--facebook {
@@ -62,12 +42,23 @@
   width: 80%;
 }
 
+body {
+  background-color: #e5e2e2;
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footerContenedor {
@@ -159,6 +150,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    height: auto;
   }
   .footerContenedor ul {
     margin: 30px;
@@ -168,10 +160,9 @@
   }
 }
 
-@media screen and (max-width: 680px) {
-  .hero {
-    height: auto;
-    width: 100%;
+@media screen and (max-width: 590px) {
+  .hero h1 {
+    font-size: 10px;
   }
 }
 
@@ -224,10 +215,6 @@
   color: #290227;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  background-color: whitesmoke;
 }
 
 .grid-container {
@@ -548,4 +535,3 @@ body {
 .form-select {
   margin-bottom: 10px;
 }
-/*# sourceMappingURL=style.css.map */
