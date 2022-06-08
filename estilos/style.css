@@ -127,6 +127,96 @@
   color: black;
 }
 
+/*------MEDIA QUERIE------*/
+@media screen and (max-width: 1060px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header nav .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .header figure img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footerContenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footerContenedor ul {
+    margin: 30px;
+  }
+  .footerContenedor a img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactologiaLista {
+    margin: auto;
+  }
+  .contactologiaVideo iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .vision div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .vision div figure img {
+    width: 100%;
+    margin: auto;
+  }
+  .vision div figure figcaption {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .main .formulario {
+    width: 50%;
+  }
+  .main .formulario article form input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .direccion iframe {
+    width: auto;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -207,6 +297,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
+  background-color: rgba(128, 128, 128, 0.164);
 }
 
 .marca h2 {
@@ -261,8 +352,8 @@ body {
   margin: 20px;
   border: 3px solid rgba(240, 235, 240, 0.531);
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.346);
-          box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.346);
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(182, 127, 182, 0.346);
+          box-shadow: 2px 2px 5px 3px rgba(182, 127, 182, 0.346);
 }
 
 .marcasLogos img:hover {
@@ -455,95 +546,5 @@ body {
 
 .form-select {
   margin-bottom: 10px;
-}
-
-/*------MEDIA QUERIE------*/
-@media screen and (max-width: 1060px) {
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header nav .navBar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 100%;
-  }
-  .header figure img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .footerContenedor {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .footerContenedor ul {
-    margin: 30px;
-  }
-  .footerContenedor a img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .hero {
-    height: auto;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contactologiaLista {
-    margin: auto;
-  }
-  .contactologiaVideo iframe {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .vision div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 80%;
-    margin: auto;
-  }
-  .vision div figure img {
-    width: 100%;
-    margin: auto;
-  }
-  .vision div figure figcaption {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .main .formulario {
-    width: 50%;
-  }
-  .main .formulario article form input {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .direccion iframe {
-    width: auto;
-  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+/*------MEDIA QUERIE------*/
+
+@media screen and (max-width:1060px){
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header nav .navBar{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .header figure img{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:1100px){
+
+    .footerContenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerContenedor ul{
+        margin:30px;
+    }
+
+    .footerContenedor a img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:680px){
+    .hero{
+        height:auto;
+        width: 100%;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:600px){
+    .contactologiaLista{
+        
+        margin:auto;
+    }
+
+    .contactologiaVideo iframe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .vision  div {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .vision div figure img{
+        width: 100%;
+        margin: auto;
+        
+
+
+    }
+    
+    .vision div figure figcaption{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1250px){
+
+    .main .formulario{
+        width: 50%;
+    }
+    .main .formulario article form input{
+        width: 80%;
+    
+    }
+}
+
+@media screen and (max-width: 770px){
+    .direccion iframe{
+        width: auto;
+    }
+}

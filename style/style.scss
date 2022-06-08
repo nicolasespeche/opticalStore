@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 @import "generales";
 @import "variables";
+@import "mediasQueries";
 *{
     margin: 0;
     padding:0;
@@ -77,7 +78,9 @@ body{
 
 .main{
     grid-area: main;
+    background-color: rgba(128, 128, 128, 0.164);
 }
+
 
 @mixin tamaño ($ancho,$alto){
     width: $ancho;
@@ -130,7 +133,7 @@ body{
         margin: 20px;
         border: 3px solid rgba(240, 235, 240, 0.531);
         border-radius: 20px;
-        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.346);
+        box-shadow: 2px 2px 5px 3px rgba(182, 127, 182, 0.346);
         &:hover{
             animation: marcas 1s;
         }
@@ -324,99 +327,3 @@ body{
 
 
 
-/*------MEDIA QUERIE------*/
-
-@media screen and (max-width:1060px){
-
-    .header{
-        flex-direction: column;
-        align-items: center;
-    }
-    .header nav .navBar{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        
-    }
-
-    .header figure img{
-        width: 100%;
-    }
-}
-
-
-
-@media screen and (max-width:1100px){
-
-    .footerContenedor{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footerContenedor ul{
-        margin:30px;
-    }
-
-    .footerContenedor a img{
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width:680px){
-    .hero{
-        height:auto;
-        width: 100%;
-    }
-
-    
-}
-
-
-
-@media screen and (max-width:600px){
-    .contactologiaLista{
-        
-        margin:auto;
-    }
-
-    .contactologiaVideo iframe{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:1300px){
-    .vision  div {
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-    }
-    .vision div figure img{
-        width: 100%;
-        margin: auto;
-        
-
-
-    }
-    
-    .vision div figure figcaption{
-        width: 100%;
-        margin: auto;
-    }
-}
-@media screen and (max-width:1250px){
-
-    .main .formulario{
-        width: 50%;
-    }
-    .main .formulario article form input{
-        width: 80%;
-    
-    }
-}
-
-@media screen and (max-width: 770px){
-    .direccion iframe{
-        width: auto;
-    }
-}
