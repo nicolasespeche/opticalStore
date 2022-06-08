@@ -204,7 +204,10 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-  .direccion iframe {
+  .carousel-inner iframe {
+    width: auto;
+  }
+  .carousel-control-next {
     width: auto;
   }
 }
