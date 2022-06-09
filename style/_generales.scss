@@ -50,14 +50,40 @@ body{
 }
 
 
-.redes div a{
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, sans-serif;
+.redesPrueba{
     display: flex;
-    flex-direction: column;
-    color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
     
+    .facebook{
+        background-color: rgb(10, 82, 216);
+        color: white;
+        width: 100%;
+        i{
+            color: white;
+        }
+    }
+
+    .whatsapp{
+        background-color: rgb(3, 150, 15);
+        color: white;
+        width: 100%;
+        i{
+            color: white;
+        }
+    }
+
+    .instagram{
+        background:linear-gradient(45deg, #5851db, #833ab4, #c13584, #e1306c);
+        color: white;
+        width: 100%;
+        i{
+            color: white;
+        }
+    }
 }
 
 

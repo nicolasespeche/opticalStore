@@ -68,18 +68,51 @@ body {
   color: black;
 }
 
-.redes div a {
-  padding-bottom: 10px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, sans-serif;
+.redesPrueba {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: black;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.redesPrueba .facebook {
+  background-color: #0a52d8;
+  color: white;
+  width: 100%;
+}
+
+.redesPrueba .facebook i {
+  color: white;
+}
+
+.redesPrueba .whatsapp {
+  background-color: #03960f;
+  color: white;
+  width: 100%;
+}
+
+.redesPrueba .whatsapp i {
+  color: white;
+}
+
+.redesPrueba .instagram {
+  background: linear-gradient(45deg, #5851db, #833ab4, #c13584, #e1306c);
+  color: white;
+  width: 100%;
+}
+
+.redesPrueba .instagram i {
+  color: white;
 }
 
 .derechosReservados {
@@ -255,32 +288,15 @@ body {
   height: auto;
 }
 
-.marca h2 {
-  width: 100%;
-  height: 60px;
-  margin: 40px 0px 40px 0px;
-  background-color: rgba(69, 1, 69, 0.599);
-  color: #daafcf;
-  text-align: center;
-  font-size: 40px;
-}
-
-.marca div div {
-  width: 600px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  text-align: center;
-}
-
-.marca div div:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.marca > div {
+/*---------CARDS ATAJOS---------*/
+.atajos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -288,9 +304,28 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 150px 20px 100px 20px;
 }
 
-/* FIN DE SECCIÓN DE MARCAS Y DESCRIPCIONES */
+.atajos .card {
+  height: 415px;
+  margin: 40px;
+}
+
+.atajos .card img {
+  height: 200px;
+}
+
+.atajos .card-body {
+  height: auto;
+}
+
+.atajos .card-body a {
+  height: 40px;
+  background-color: rgba(126, 6, 120, 0.5);
+  border: 1px solid #fffcf5;
+}
+
 /* ARMAZONES */
 .marcasYLogos, .marcasLogos {
   display: -webkit-box;
