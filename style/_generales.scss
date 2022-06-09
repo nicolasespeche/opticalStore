@@ -15,21 +15,6 @@
     height: auto;
 }
 
-$redes:(
-    facebook:rgb(13, 48, 202),
-    instagram: rgb(214, 51, 160),
-    whatsapp: rgb(11, 199, 11),
-);
-
-@each $red, $color in $redes{
-    .btm--#{$red}{
-        background-color: $color;
-        border: 1px solid $color;
-        border-radius: 5px;
-        height: 20px;
-        width: 80%;
-    }
-}
 
 body{
     background-color: rgb(229, 226, 226);
