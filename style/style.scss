@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import "generales";
 @import "variables";
 @import "mediasQueries";
@@ -76,6 +77,8 @@
 .main{
     grid-area: main;
     height: auto;
+    background-color: rgba(243, 240, 240, 0.411);
+    margin-top: 20px;
 }
 
 
@@ -94,6 +97,7 @@
     flex-wrap: wrap;
     margin: 150px 20px 100px 20px;
     .card{
+        box-shadow: 4px 2px 10px 3px rgba(124, 121, 124, 0.346);
         height: 415px;
         margin: 40px;
         img{
@@ -104,7 +108,8 @@
         height: auto;
         a{
             height: 40px;
-            background-color: rgba(126, 6, 120, 0.5);
+            color: rgb(13, 14, 14);
+            background-color: #e5e9f2da;
             border: 1px solid rgb(255, 252, 245);
         }   
     }
@@ -117,7 +122,7 @@
     display: flex;
     flex-wrap:wrap;
     margin-left: 120px;
-    margin-top: 80px;
+    margin-top: 80px;  
 }
 .marcasLogos{
     @extend.marcasYLogos;
@@ -126,7 +131,7 @@
         margin: 20px;
         border: 3px solid rgba(240, 235, 240, 0.531);
         border-radius: 20px;
-        box-shadow: 2px 2px 5px 3px rgba(182, 127, 182, 0.346);
+        box-shadow: 2px 2px 5px 3px rgba(124, 121, 124, 0.346);
         &:hover{
             animation: marcas 1s;
         }
@@ -141,35 +146,108 @@
 }
 
 .marcasTitulo{
+    background-color: #e5e9f2da;
     text-align: center;
-    margin-bottom:5px;
+    padding: 20px;
+    height: 100px;
+    margin-bottom:100px;
+    font-family:'Montserrat', sans-serif;
     font-size: 40px;
-    font-family: "oswald",sans-serif;
-    background-color: $colortitulos;
-    color: rgb(218, 175, 207);
+    font-weight:bold;
+    color: rgba(2, 0, 2, 0.397);
 }
 
 /* Acerca de nosotros*/
 
 .nosotros{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    
-    .card{
-        margin: 50px;
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgba(240, 235, 240, 0.531);
-        border-radius: 20px;
-        box-shadow: 2px 2px 5px 3px rgba(182, 127, 182, 0.346);
+    .fundacion{
+        margin:50px;
+        display: flex;
+        height: 380px;
+        background-color: #e5e9f2da;
+        box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
+        border: 1px solid rgba(255, 252, 252, 0);
+        border-radius: 15px;
+        img{
+            width: 600px;
+            border: 1px solid rgba(255, 252, 252, 0);
+            border-radius: 15px;
+            
+        }
         h2{
+            margin: 70px;
             text-align: center;
-            height: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            font-family: "Mukta",sans-serif; 
+            text-align: center; 
+            margin:50px;
+            width: 80%;
+        }
+    }
+    .tiempo{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 380px;
+        margin: 50px;
+        background-color: #f5f7fabd;
+        box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
+        border: 1px solid rgba(255, 252, 252, 0);
+        border-radius: 15px;
+        img{
+            width: 600px;
+            border: 1px solid rgba(255, 252, 252, 0);
+            border-radius: 15px;
+        }
+        h2{
+            margin: 70px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            font-family: "Mukta",sans-serif; 
+            text-align: center; 
+            margin:50px;
+            width: 80%;
+        }
+        
+    }
+    .actualidad{
+        display: flex;
+        height: 380px;
+        margin: 50px;
+        background-color: #e5e9f2da;
+        box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
+        border: 1px solid rgba(255, 252, 252, 0);
+        border-radius: 15px;
+        img{
+            width: 600px;
+            border: 1px solid rgba(255, 252, 252, 0);
+            border-radius: 15px;
+        }
+        h2{
+            margin: 70px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            font-family: "Mukta",sans-serif; 
+            text-align: center; 
+            margin:50px;
+            width: 80%;
         }
     }
 }
-
 
 /* CONTACTOLOGIA */
 
@@ -194,20 +272,23 @@
     
 }
 
+.contactologiaSection{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 .contactologiaLista{
-    margin: 150px;
-    text-align: center;
+    margin: 80px;
     h2{
         font-family: "oswald",sans-serif;
-        font-size: 25px;
+        margin: 30px;
         text-align: center;
-        text-decoration: underline;
     }
     ul{
         li{
             list-style-type: none;
-            margin: 20px;
+            margin: 10px;
         }
     }
 }
@@ -215,7 +296,7 @@
 
 .contactologiaVideo{
     text-align: center;
-    
+    height: auto;
 }
 
 .contactologiaVideo h3{
@@ -224,8 +305,9 @@
 }
 
 .contactologiaVideo iframe{
-    border: 5px double rgba(238, 164, 227, 0.58);
     padding: 20px;
+    height: 400px;
+    width: 700px;
 }
 
 /* CONTACTO--FORMULARIO  */
