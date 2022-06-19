@@ -27,6 +27,7 @@ body{
 }
 
 .footerContenedor{
+    margin-top: 40px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -58,10 +59,6 @@ body{
     align-items: center;
     text-align: center;
     margin-top: 40px;
-    a{
-        :target:_blank;
-    }
-    
     .facebook{
         background-color: rgb(10, 82, 216);
         color: white;
