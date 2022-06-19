@@ -58,15 +58,24 @@ body {
   font-weight: lighter;
 }
 
-.footerContenedor ul {
-  list-style-type: none;
+.footerContenedor .detalles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.footerContenedor ul li a {
-  padding-bottom: 10px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
+.footerContenedor .direccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .redesPrueba {
