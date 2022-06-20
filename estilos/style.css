@@ -29,17 +29,9 @@ body {
   -ms-grid-column-span: 2;
   grid-area: footer;
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .footerContenedor {
-  margin-top: 40px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,13 +42,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px;
-}
-
-.footerContenedor h4 {
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: lighter;
+  padding: 60px;
 }
 
 .footerContenedor .detalles {
@@ -69,6 +55,14 @@ body {
           flex-direction: column;
 }
 
+.footerContenedor .detalles h3 {
+  font-size: 22px;
+}
+
+.footerContenedor .detalles p {
+  font-size: 14px;
+}
+
 .footerContenedor .direccion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +71,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footerContenedor .direccion h3 {
+  font-size: 22px;
+}
+
+.footerContenedor .direccion p {
+  font-size: 14px;
 }
 
 .redesPrueba {
@@ -97,7 +99,7 @@ body {
 }
 
 .redesPrueba .facebook {
-  background-color: #0a52d8;
+  background-color: rgba(10, 82, 216, 0.877);
   color: white;
   width: 100%;
 }
@@ -107,7 +109,7 @@ body {
 }
 
 .redesPrueba .whatsapp {
-  background-color: #03960f;
+  background-color: rgba(47, 180, 58, 0.856);
   color: white;
   width: 100%;
 }
@@ -117,7 +119,7 @@ body {
 }
 
 .redesPrueba .instagram {
-  background: linear-gradient(45deg, #5851db, #833ab4, #c13584, #e1306c);
+  background: linear-gradient(45deg, #5851dbda, #833ab4d3, #c13584, #e1306c);
   color: white;
   width: 100%;
 }
@@ -222,6 +224,17 @@ body {
             justify-content: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/lentes4.jpg);
     background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/lentes4.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .giftContenedor div p {
+    font-size: 15px;
+    padding: 0px;
+  }
+  .giftContenedor div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -411,7 +424,7 @@ body {
   font-size: 20px;
 }
 
-.giftContenedor .giftCard {
+.giftContenedor div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,12 +438,12 @@ body {
           filter: drop-shadow(2px 2px 6px rgba(24, 19, 19, 0.336));
 }
 
-.giftContenedor .giftCard p {
-  margin: 70px;
+.giftContenedor div p {
+  padding: 50px;
 }
 
-.giftContenedor .giftCard img {
-  width: 600px;
+.giftContenedor div img {
+  width: auto;
   height: 300px;
   border: 1px solid white;
   border-radius: 5px;
@@ -466,17 +479,26 @@ body {
 }
 
 .marcas h1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 217, 217, 0.096))), url(../img/lentes4.jpg);
-  background-image: linear-gradient(rgba(230, 217, 217, 0.096)), url(../img/lentes4.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 54, 54, 0.185)), to(rgba(255, 255, 255, 0.116))), url(../img/lentes4.jpg);
+  background-image: linear-gradient(rgba(56, 54, 54, 0.185), rgba(255, 255, 255, 0.116)), url(../img/lentes4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: left;
-  padding: 40px;
+  padding: 20px;
   height: 30vh;
   margin-bottom: 100px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   color: rgba(2, 0, 2, 0.61);
 }

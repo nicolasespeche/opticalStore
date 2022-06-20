@@ -87,3 +87,19 @@
         background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)),url(../img/lentes4.jpg);
     }    
 }
+
+
+@media screen and (max-width:1000px){
+    .giftContenedor div p{
+        font-size: 15px;
+        padding: 0px;
+    }
+    .giftContenedor div{
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    
+}

@@ -22,31 +22,36 @@ body{
 .footer{
     grid-area: footer;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .footerContenedor{
-    margin-top: 40px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    h4{
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight:lighter;
-    }
+    padding: 60px;
     
     .detalles{
     display: flex;
     flex-direction: column;
+    h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
     }
 
     .direccion{
         display: flex;
         flex-direction: column;
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
 
 }
@@ -60,7 +65,7 @@ body{
     text-align: center;
     margin-top: 40px;
     .facebook{
-        background-color: rgb(10, 82, 216);
+        background-color: rgba(10, 82, 216, 0.877);
         color: white;
         width: 100%;
         i{
@@ -69,7 +74,7 @@ body{
     }
 
     .whatsapp{
-        background-color: rgb(3, 150, 15);
+        background-color: rgba(47, 180, 58, 0.856);
         color: white;
         width: 100%;
         i{
@@ -78,7 +83,7 @@ body{
     }
 
     .instagram{
-        background:linear-gradient(45deg, #5851db, #833ab4, #c13584, #e1306c);
+        background:linear-gradient(45deg, #5851dbda, #833ab4d3, #c13584, #e1306c);
         color: white;
         width: 100%;
         i{
