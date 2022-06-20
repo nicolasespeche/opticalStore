@@ -206,9 +206,22 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .marcas div img {
-    width: 100%;
+@media screen and (max-width: 1080px) {
+  main .marcas h1 {
+    color: rgba(252, 252, 252, 0.849);
+    font-size: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/lentes4.jpg);
+    background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/lentes4.jpg);
   }
 }
 
