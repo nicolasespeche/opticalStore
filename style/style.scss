@@ -184,23 +184,37 @@
 
 /* ARMAZONES */
 
-.marcasYLogos{
-    display: flex;
-    flex-wrap:wrap;
-    margin-left: 120px;
-    margin-top: 80px;  
-}
-.marcasLogos{
-    @extend.marcasYLogos;
-    img{
-        width: 200px;
-        margin: 20px;
-        border: 3px solid rgba(240, 235, 240, 0.531);
-        border-radius: 20px;
-        box-shadow: 2px 2px 5px 3px rgba(124, 121, 124, 0.346);
-        &:hover{
-            animation: marcas 1s;
+.marcas{
+    div{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border: 3px solid rgba(240, 235, 240, 0.531);
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px 3px rgba(124, 121, 124, 0.346);
+            &:hover{
+                animation: marcas 1s;
+            }
         }
+    }
+    h1{
+        background-image: linear-gradient(rgba(230, 217, 217, 0.096)),url(../img/lentes4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: left;
+        padding: 40px;
+        height: 30vh;
+        margin-bottom:100px;
+        font-family:'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color: rgba(2, 0, 2, 0.61);
     }
 }
 
@@ -211,20 +225,6 @@
     }
 }
 
-.marcasTitulo{
-    background-image: linear-gradient(rgba(230, 217, 217, 0.096)),url(../img/lentes4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: left;
-    padding: 40px;
-    height: 30vh;
-    margin-bottom:100px;
-    font-family:'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight:bold;
-    color: rgba(2, 0, 2, 0.61);
-}
 
 /* Acerca de nosotros*/
 

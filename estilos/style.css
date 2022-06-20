@@ -206,6 +206,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .marcas div img {
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -418,18 +424,22 @@ body {
 }
 
 /* ARMAZONES */
-.marcasYLogos, .marcasLogos {
+.marcas div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 120px;
-  margin-top: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.marcasLogos img {
+.marcas div img {
   width: 200px;
+  height: 200px;
   margin: 20px;
   border: 3px solid rgba(240, 235, 240, 0.531);
   border-radius: 20px;
@@ -437,9 +447,25 @@ body {
           box-shadow: 2px 2px 5px 3px rgba(124, 121, 124, 0.346);
 }
 
-.marcasLogos img:hover {
+.marcas div img:hover {
   -webkit-animation: marcas 1s;
           animation: marcas 1s;
+}
+
+.marcas h1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 217, 217, 0.096))), url(../img/lentes4.jpg);
+  background-image: linear-gradient(rgba(230, 217, 217, 0.096)), url(../img/lentes4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 40px;
+  height: 30vh;
+  margin-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(2, 0, 2, 0.61);
 }
 
 @-webkit-keyframes marcas {
@@ -454,22 +480,6 @@ body {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-}
-
-.marcasTitulo {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 217, 217, 0.096))), url(../img/lentes4.jpg);
-  background-image: linear-gradient(rgba(230, 217, 217, 0.096)), url(../img/lentes4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: left;
-  padding: 40px;
-  height: 30vh;
-  margin-bottom: 100px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgba(2, 0, 2, 0.61);
 }
 
 /* Acerca de nosotros*/
