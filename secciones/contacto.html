@@ -50,58 +50,46 @@
             
         </header> 
         <main class="main">
-
-            <h1 class="tituloContacto">Contacto</h1>
-
-            <div class="contenedorFormularioMapa">
-
+            <section class="contenedorFormularioMapa"> 
                 <!--Formulario de Contacto-->
-
-                <div class="formulario">
+                <h1 class="tituloContacto">Contacto</h1>
+                <form class="formulario">
                     <section class="formularioTitulo">
                         <h2>Formulario de contacto</h2>
                     </section>
-                    <div class="input-group">
-                        <span class="input-group-text">Nombre y Apellido</span>
-                        <input type="text" aria-label="First name" class="form-control">
-                        <input type="text" aria-label="Last name" class="form-control">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Correo Electrónico</label>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
                     </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Teléfono</label>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su teléfono">
                     </div>
-
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>¿Qué tipo de asesoría le gustaría recibir?</option>
-                        <option value="1">Virtual</option>
-                        <option value="2">Presencial</option>
-                    </select>
-
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Producto por el que realiza la consulta</option>
-                        <option value="1">Lentes de sol</option>
-                        <option value="2">Recetas</option>
-                        <option value="3">Contactología</option>
-                    </select>
-
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comentarios</label>
+                    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el motivo de la consulta">
                     </div>
 
-                    <button type="button" class="btn btn-success">Enviar</button>
-                    <button type="button" class="btn btn-danger">Limpiar formulario</button>
-                </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Limpiar formulario</button>
+                    </div>
+                </form>
                 <div class="direccion">
                     <h2>Dónde encontrarnos:</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.619458079998!2d-57.5422436!3d-38.0143399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c3bc0fd1da73f81!2sOptical%20Store!5e0!3m2!1ses-419!2sar!4v1653187489291!5m2!1ses-419!2sar" width="540" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>    
+            </section>  
         </main>
 
         <!-- Footer -->

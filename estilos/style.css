@@ -171,11 +171,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     height: auto;
+    padding: 0px;
   }
-  .footerContenedor ul {
-    margin: 30px;
+  .footerContenedor div {
+    padding: 30px;
   }
   .footerContenedor a img {
     width: 100%;
@@ -724,24 +731,13 @@ body {
 
 /* CONTACTO--FORMULARIO  */
 .tituloContacto {
-  background-color: rgba(69, 1, 69, 0.599);
+  background-color: #f0efed;
   width: 100%;
-  color: #daafcf;
+  color: rgba(53, 51, 52, 0.39);
   text-align: center;
   height: 60px;
   font-size: 40px;
   font-family: "oswald",sans-serif;
-}
-
-.contenedorFormularioMapa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 30px;
 }
 
 .direccion h2 {
@@ -756,30 +752,44 @@ body {
   padding: 5px;
 }
 
+.contenedorFormularioMapa .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .formularioTitulo {
   text-align: center;
   margin-bottom: 5px;
   font-size: 25px;
   font-family: "oswald",sans-serif;
   text-decoration: underline;
-  background-color: rgba(69, 1, 69, 0.599);
-  color: #daafcf;
-  border: 2px solid rgba(69, 1, 69, 0.599);
+  background-color: #f0efed;
+  color: rgba(53, 51, 52, 0.39);
   border-radius: 10px;
 }
 
-.input-group {
-  margin-bottom: 10px;
+.formulario .mb-3 {
+  padding: 10px 400px;
 }
 
-.form-floating mb-3 {
-  margin-bottom: 10px;
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
 }
 
-.form-floating {
-  margin-bottom: 10px;
-}
-
-.form-select {
-  margin-bottom: 10px;
+.buttons button {
+  padding: 10px 30px;
+  margin: 20px;
 }

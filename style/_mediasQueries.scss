@@ -24,19 +24,23 @@
 
     .footerContenedor{
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         text-align: center;
         height: auto;
-    }
-
-    .footerContenedor ul{
-        margin:30px;
+        padding: 0px;
+        div{
+            padding: 30px;
+        }
     }
 
     .footerContenedor a img{
         width: 100%;
     }
 
+    
 }
+
 
 
 
