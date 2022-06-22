@@ -55,27 +55,36 @@
 }
 
 @media screen and (max-width:800px){
-    main .contactologiaSection .contactologiaVideo iframe{
-        width: 100%;
-    }
-    main .contactologiaSection .contactologiaLista{
-        margin: 0px;
-        ul{
-            margin: 0px;
+    main{
+        .contactologiaSection{
+            .contactologiaLista{
+                margin: 0px;
+                ul{
+                    margin: 0px;
+                }
+            }
+            .contactologiaVideo{
+                iframe{
+                    width: 100%;
+                }
+                
+            }
         }
-    }
-
-    main .contactologiaMantenimiento .contactologiaVideo iframe{
-        width: 100%;
-    }
-    main .contactologiaMantenimiento .contactologiaLista{
-        margin: 0px;
-        ul{
-            margin: 0px;
+        .contactologiaMantenimiento{
+            .contactologiaLista{
+                margin: 0px;
+                ul{
+                    margin: 0px;
+                }
+            }
+            .contactologiaVideo{
+                iframe{
+                    width: 100%;
+                }
+            }
         }
     }
 }
-
 
 
 @media screen and (max-width: 1120px){

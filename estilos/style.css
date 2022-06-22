@@ -211,16 +211,13 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  main .contactologiaSection .contactologiaVideo iframe {
-    width: 100%;
-  }
   main .contactologiaSection .contactologiaLista {
     margin: 0px;
   }
   main .contactologiaSection .contactologiaLista ul {
     margin: 0px;
   }
-  main .contactologiaMantenimiento .contactologiaVideo iframe {
+  main .contactologiaSection .contactologiaVideo iframe {
     width: 100%;
   }
   main .contactologiaMantenimiento .contactologiaLista {
@@ -228,6 +225,9 @@ body {
   }
   main .contactologiaMantenimiento .contactologiaLista ul {
     margin: 0px;
+  }
+  main .contactologiaMantenimiento .contactologiaVideo iframe {
+    width: 100%;
   }
 }
 
