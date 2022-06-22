@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap");
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,6 +224,22 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/lentes4.jpg);
     background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/lentes4.jpg);
   }
+  main .nosotros h1 {
+    color: rgba(252, 252, 252, 0.849);
+    font-size: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/banner11.jpg);
+    background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/banner11.jpg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -248,7 +265,10 @@ body {
     height: 250px;
   }
   .nosotros .texto p {
-    width: auto;
+    text-align: center;
+  }
+  .nosotros .texto h2 {
+    text-align: center;
   }
 }
 
@@ -511,9 +531,8 @@ body {
   padding: 20px;
   height: 30vh;
   margin-bottom: 100px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
   color: rgba(2, 0, 2, 0.61);
 }
 
@@ -532,7 +551,32 @@ body {
 }
 
 /* Acerca de nosotros*/
-.nosotros {
+.nosotros h1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 54, 54, 0.185)), to(rgba(255, 255, 255, 0.116))), url(../img/banner11.jpg);
+  background-image: linear-gradient(rgba(56, 54, 54, 0.185), rgba(255, 255, 255, 0.116)), url(../img/banner11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
+  padding: 20px;
+  height: 30vh;
+  margin-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(2, 0, 2, 0.562);
+}
+
+.nosotros .contenedorNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,15 +584,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px;
+  margin: 0px 40px;
 }
 
-.nosotros .imagenes img {
+.nosotros .contenedorNosotros .imagenes img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,13 +604,12 @@ body {
   border-radius: 10px;
 }
 
-.nosotros .texto h2 {
-  text-align: center;
+.nosotros .contenedorNosotros .texto h2 {
+  margin: 20px 0px;
 }
 
-.nosotros .texto p {
-  text-align: center;
-  margin: 60px;
+.nosotros .contenedorNosotros .texto p {
+  margin: 50px 0px;
 }
 
 /* CONTACTOLOGIA */

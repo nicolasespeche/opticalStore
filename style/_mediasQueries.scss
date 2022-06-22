@@ -76,6 +76,16 @@
         justify-content: center;
         background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)),url(../img/lentes4.jpg);
     }    
+
+    main .nosotros h1{
+        color: rgba(252, 252, 252, 0.849);
+        font-size: 40px;
+        text-align:center;
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+        background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)),url(../img/banner11.jpg);
+    }
 }
 
 
@@ -107,7 +117,10 @@
 
         .texto{
             p{
-                width: auto;
+                text-align: center;
+            }
+            h2{
+                text-align: center;
             }
         }
     }

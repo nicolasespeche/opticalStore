@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
 @import "generales";
 @import "variables";
 @import "mediasQueries";
@@ -214,9 +215,8 @@
         padding: 20px;
         height: 30vh;
         margin-bottom:100px;
-        font-family:'Montserrat', sans-serif;
-        font-size: 35px;
-        font-weight:bold;
+        font-family:'Roboto', sans-serif;
+        font-size: 30px;
         color: rgba(2, 0, 2, 0.61);
     }
 }
@@ -230,13 +230,28 @@
 
 
 /* Acerca de nosotros*/
-
-.nosotros{
+.nosotros h1{
+    background-image: linear-gradient(rgba(56, 54, 54, 0.185),rgba(255, 255, 255, 0.116)),url(../img/banner11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+    padding: 20px;
+    height: 30vh;
+    margin-bottom:100px;
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight:bold;
+    color: rgba(2, 0, 2, 0.562);
+}
+.nosotros .contenedorNosotros{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    margin: 0px 40px;
     .imagenes{
         img{
             display: flex;
@@ -249,11 +264,10 @@
     }
     .texto{
         h2{
-            text-align: center;
+            margin: 20px 0px;
         }
         p{
-            text-align: center;
-            margin: 60px;
+            margin: 50px 0px;
         }
     }
 }
