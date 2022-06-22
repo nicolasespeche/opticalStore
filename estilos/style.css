@@ -282,6 +282,7 @@ body {
 @media screen and (max-width: 560px) {
   .main .giftContenedor div img {
     width: 90%;
+    height: 220px;
   }
 }
 
