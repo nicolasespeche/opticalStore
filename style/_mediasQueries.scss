@@ -45,17 +45,23 @@
 }
 
 
-@media screen and (max-width:600px){
-    .contactologiaLista{
-        
-        margin:auto;
-    }
-
-    .contactologiaVideo iframe{
-        width: 100%;
+@media screen and (max-width:1100px){
+    main .contactologiaSection{
+        flex-direction: column-reverse;
     }
 }
 
+@media screen and (max-width:800px){
+    main .contactologiaSection .contactologiaVideo iframe{
+        width: 100%;
+    }
+    main .contactologiaSection .contactologiaLista{
+        margin: 0px;
+        ul{
+            margin: 0px;
+        }
+    }
+}
 
 
 
