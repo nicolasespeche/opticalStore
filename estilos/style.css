@@ -237,8 +237,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/banner11.jpg);
-    background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/banner11.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 7, 7, 0.568)), to(rgba(129, 119, 119, 0.61))), url(../img/banner.jpeg);
+    background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)), url(../img/banner.jpeg);
   }
 }
 
@@ -253,7 +253,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   section .formulario .mb-3 {
     padding: 10px;
     margin: 0px;
@@ -558,8 +558,8 @@ body {
 
 /* Acerca de nosotros*/
 .nosotros h1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 54, 54, 0.185)), to(rgba(255, 255, 255, 0.116))), url(../img/banner11.jpg);
-  background-image: linear-gradient(rgba(56, 54, 54, 0.185), rgba(255, 255, 255, 0.116)), url(../img/banner11.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 54, 54, 0.185)), to(rgba(255, 255, 255, 0.116))), url(../img/banner.jpeg);
+  background-image: linear-gradient(rgba(56, 54, 54, 0.185), rgba(255, 255, 255, 0.116)), url(../img/banner.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

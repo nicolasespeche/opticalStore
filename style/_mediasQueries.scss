@@ -84,7 +84,7 @@
         display: flex;
         align-items:flex-end;
         justify-content: center;
-        background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)),url(../img/banner11.jpg);
+        background-image: linear-gradient(rgba(8, 7, 7, 0.568), rgba(129, 119, 119, 0.61)),url(../img/banner.jpeg);
     }
 }
 
@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1000px){
     section .formulario .mb-3{
         padding: 10px;
         margin: 0px;
