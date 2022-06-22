@@ -125,3 +125,9 @@
     flex-direction: column;
     }
 }
+
+@media screen and (max-width: 560px) {
+    .main .giftContenedor div img{
+        width: 90%;
+    }
+}

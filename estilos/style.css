@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,6 +276,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main .giftContenedor div img {
+    width: 90%;
   }
 }
 
@@ -619,10 +626,14 @@ section .contenedorNosotros .imagenes img {
 
 section .contenedorNosotros .texto h2 {
   margin: 20px 0px;
+  color: rgba(2, 0, 2, 0.521);
+  text-decoration: underline;
 }
 
 section .contenedorNosotros .texto p {
   margin: 50px 0px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* CONTACTOLOGIA */
@@ -718,21 +729,22 @@ section .contenedorNosotros .texto p {
 /* CONTACTO--FORMULARIO  */
 .tituloContacto {
   text-align: center;
-  font-size: 50px;
-  font-family: "oswald",sans-serif;
-  background-color: #f0efed;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 206, 206, 0.5)), to(rgba(243, 240, 240, 0.027)));
+  background-image: linear-gradient(rgba(211, 206, 206, 0.5), rgba(243, 240, 240, 0.027));
   color: rgba(53, 51, 52, 0.39);
-  padding: 5px;
+  padding: 10px;
 }
 
 .direccion div h2 {
   text-align: center;
-  font-size: 50px;
-  font-family: "oswald",sans-serif;
-  background-color: #f0efed;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 206, 206, 0.5)), to(rgba(243, 240, 240, 0.027)));
+  background-image: linear-gradient(rgba(211, 206, 206, 0.5), rgba(243, 240, 240, 0.027));
   color: rgba(53, 51, 52, 0.39);
-  margin: 20px 0px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .direccion div iframe {
