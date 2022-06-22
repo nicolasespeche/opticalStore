@@ -49,6 +49,9 @@
     main .contactologiaSection{
         flex-direction: column-reverse;
     }
+    main .contactologiaMantenimiento{
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -56,6 +59,16 @@
         width: 100%;
     }
     main .contactologiaSection .contactologiaLista{
+        margin: 0px;
+        ul{
+            margin: 0px;
+        }
+    }
+
+    main .contactologiaMantenimiento .contactologiaVideo iframe{
+        width: 100%;
+    }
+    main .contactologiaMantenimiento .contactologiaLista{
         margin: 0px;
         ul{
             margin: 0px;

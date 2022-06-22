@@ -320,6 +320,14 @@ section .contenedorNosotros{
     padding: 20px;
 }
 
+.contactologiaMantenimiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 
 .contactologiaLista{
     margin: 80px;
@@ -331,7 +339,7 @@ section .contenedorNosotros{
     }
     ul{
         li{
-            list-style-type:square;
+            list-style-type:sq;
             margin: 10px;
             font-size: 12px;
             font-family: 'Poppins',sans-serif;

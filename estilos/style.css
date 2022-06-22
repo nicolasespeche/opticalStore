@@ -202,6 +202,12 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  main .contactologiaMantenimiento {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -212,6 +218,15 @@ body {
     margin: 0px;
   }
   main .contactologiaSection .contactologiaLista ul {
+    margin: 0px;
+  }
+  main .contactologiaMantenimiento .contactologiaVideo iframe {
+    width: 100%;
+  }
+  main .contactologiaMantenimiento .contactologiaLista {
+    margin: 0px;
+  }
+  main .contactologiaMantenimiento .contactologiaLista ul {
     margin: 0px;
   }
 }
@@ -711,6 +726,23 @@ section .contenedorNosotros .texto p {
   padding: 20px;
 }
 
+.contactologiaMantenimiento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
 .contactologiaLista {
   margin: 80px;
 }
@@ -723,7 +755,7 @@ section .contenedorNosotros .texto p {
 }
 
 .contactologiaLista ul li {
-  list-style-type: square;
+  list-style-type: sq;
   margin: 10px;
   font-size: 12px;
   font-family: 'Poppins',sans-serif;
