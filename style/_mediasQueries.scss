@@ -96,3 +96,16 @@
         margin: 0px;
     }
 }
+
+
+@media screen and (max-width: 1040px){
+    .tiempo{
+        .contenedorTexto{
+            height: 100px;
+        }
+        .img{
+            width: auto;
+            height: auto;
+        }
+    }
+}

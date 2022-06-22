@@ -243,6 +243,16 @@ body {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .tiempo .contenedorTexto {
+    height: 100px;
+  }
+  .tiempo .img {
+    width: auto;
+    height: auto;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -527,119 +537,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.nosotros .fundacion {
-  margin: 50px;
+.nosotros .imagenes img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 380px;
-  background-color: #e5e9f2da;
-  -webkit-box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-          box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.nosotros .fundacion img {
-  width: 600px;
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
-}
-
-.nosotros .fundacion h2 {
-  margin: 70px;
+.nosotros .texto h2 {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
 }
 
-.nosotros .fundacion p {
-  font-family: "Mukta",sans-serif;
+.nosotros .texto p {
   text-align: center;
-  margin: 50px;
-  width: 80%;
-}
-
-.nosotros .tiempo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  height: 380px;
-  margin: 50px;
-  background-color: #f5f7fabd;
-  -webkit-box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-          box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
-}
-
-.nosotros .tiempo img {
-  width: 600px;
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
-}
-
-.nosotros .tiempo h2 {
-  margin: 70px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.nosotros .tiempo p {
-  font-family: "Mukta",sans-serif;
-  text-align: center;
-  margin: 50px;
-  width: 80%;
-}
-
-.nosotros .actualidad {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 380px;
-  margin: 50px;
-  background-color: #e5e9f2da;
-  -webkit-box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-          box-shadow: 4px 4px 10px 2px rgba(66, 63, 66, 0.822);
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
-}
-
-.nosotros .actualidad img {
-  width: 600px;
-  border: 1px solid rgba(255, 252, 252, 0);
-  border-radius: 15px;
-}
-
-.nosotros .actualidad h2 {
-  margin: 70px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.nosotros .actualidad p {
-  font-family: "Mukta",sans-serif;
-  text-align: center;
-  margin: 50px;
-  width: 80%;
+  margin: 60px;
 }
 
 /* CONTACTOLOGIA */
@@ -668,7 +597,7 @@ body {
 }
 
 .contactologia h1 {
-  margin-bottom: 20px;
+  text-align: center;
   font-size: 50px;
   color: rgba(253, 252, 251, 0.644);
   font-family: "oswald",sans-serif;
@@ -690,7 +619,12 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  height: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
