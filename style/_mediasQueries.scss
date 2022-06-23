@@ -83,6 +83,10 @@
         flex-wrap: wrap;
     
     }
+
+    .nosotros .contenedorNosotros .imagenes img{
+        width: 100%; 
+    }
 }
 
 @media screen and (max-width: 1080px){
@@ -117,6 +121,15 @@
     .giftContenedor div{
         flex-wrap: wrap;
         
+    }
+
+    nav div .navbar-toggler{
+        margin: auto;
+    }
+
+    .container-fluid{
+        text-align: center;
+        padding: 20px;
     }
 }
 

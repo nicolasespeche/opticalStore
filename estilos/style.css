@@ -226,6 +226,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .nosotros .contenedorNosotros .imagenes img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -271,6 +274,13 @@ body {
   .giftContenedor div {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  nav div .navbar-toggler {
+    margin: auto;
+  }
+  .container-fluid {
+    text-align: center;
+    padding: 20px;
   }
 }
 
@@ -735,6 +745,12 @@ section .contenedorNosotros .texto p {
 
 .contactologiaLista {
   margin: 80px;
+  background-color: rgba(222, 243, 240, 0.349);
+  border: 1px solid rgba(222, 243, 240, 0.349);
+  -webkit-box-shadow: 3px 3px 8px 2px rgba(90, 88, 88, 0.486);
+          box-shadow: 3px 3px 8px 2px rgba(90, 88, 88, 0.486);
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .contactologiaLista h2 {
@@ -745,7 +761,7 @@ section .contenedorNosotros .texto p {
 }
 
 .contactologiaLista ul li {
-  list-style-type: sq;
+  list-style-type: square;
   margin: 10px;
   font-size: 12px;
   font-family: 'Poppins',sans-serif;
