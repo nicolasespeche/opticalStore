@@ -13,6 +13,9 @@
     -ms-grid-column-span: 2;
     grid-area: header;
     height: auto;
+    nav div .navbar-toggler{
+        margin-bottom: 15px;
+    }
 }
 
 body{

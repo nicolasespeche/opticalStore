@@ -63,15 +63,7 @@
 }
 
 
-.nosotros figure img{
-    border: 2px solid white;
-    border-style:groove;
-    padding:10px;
-    border-radius: 20px;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    margin-left: 35%;
-}
+
 
 
 
@@ -356,18 +348,17 @@ section .contenedorNosotros{
 .contactologiaVideo{
     text-align: center;
     height: auto;
+    h3{
+        font-family: 'Signika Negative',sans-serif;
+        margin: 30px;
+    }
+    iframe{
+        padding: 20px;
+        height: 400px;
+        width: 700px;
+    }
 }
 
-.contactologiaVideo h3{
-    font-family: 'Signika Negative',sans-serif;
-    margin: 30px;
-}
-
-.contactologiaVideo iframe{
-    padding: 20px;
-    height: 400px;
-    width: 700px;
-}
 /* CONTACTO--FORMULARIO  */
 
 .tituloContacto{
