@@ -88,7 +88,7 @@ body {
   font-size: 14px;
 }
 
-.redesPrueba {
+.redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,33 +105,33 @@ body {
   margin-top: 40px;
 }
 
-.redesPrueba .facebook {
+.redes .facebook {
   background-color: rgba(10, 82, 216, 0.877);
   color: white;
   width: 100%;
 }
 
-.redesPrueba .facebook i {
+.redes .facebook i {
   color: white;
 }
 
-.redesPrueba .whatsapp {
+.redes .whatsapp {
   background-color: rgba(47, 180, 58, 0.856);
   color: white;
   width: 100%;
 }
 
-.redesPrueba .whatsapp i {
+.redes .whatsapp i {
   color: white;
 }
 
-.redesPrueba .instagram {
+.redes .instagram {
   background: linear-gradient(45deg, #5851dbda, #833ab4d3, #c13584, #e1306c);
   color: white;
   width: 100%;
 }
 
-.redesPrueba .instagram i {
+.redes .instagram i {
   color: white;
 }
 
