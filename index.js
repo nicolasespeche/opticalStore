@@ -42,6 +42,7 @@
 nombrePrompt = prompt("Ingrese su Nombre");
 apellidoPrompt = prompt("Ahora ingrese su Apellido");
 edadPrompt = prompt ("¿Cuál es su edad?");
+tarjetaDeCredito= prompt("¿Qué tarjeta posee?")
 
 function nuevoCliente (nombre,apellido, edad) {
     this.nombre = nombre;
@@ -49,17 +50,16 @@ function nuevoCliente (nombre,apellido, edad) {
     this.edad = edad;
 }
 
-cliente1 = new nuevoCliente(nombrePrompt,apellidoPrompt,edadPrompt)
+cliente1 = new nuevoCliente(nombrePrompt,apellidoPrompt,edadPrompt);
 
-arrayNombre = [];
-arrayApellido = [];
-arrayEdad = [];
+arrayClientes= [];
+arrayTarjetas = [];
 
-arrayNombre.push(nombrePrompt);
-arrayApellido.push(apellidoPrompt);
-arrayEdad.push(edadPrompt);
+arrayClientes.push(cliente1);
+arrayTarjetas.push(tarjetaDeCredito);
 
-console.log(cliente1)
+console.log(arrayClientes);
+console.log(arrayTarjetas);
 
 
 
