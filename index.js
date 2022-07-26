@@ -1,65 +1,48 @@
-// alert("¿Desea ver una secuencia de numeros en consola?")
-// opc=prompt("Indique si para ver la secuencia, caso contrario ingrese no")
+//----------- SIMULADOR DE TURNOS ---------------
 
-// if(opc === "si" || opc === "SI"){
+const turnosAsignados = [];
 
-//     for(let i = 0 ; i <= 10 ; i++){
-//         console.log (i)
-//     }
-// }
-// else if (opc === "no" || opc === "NO"){
-//     console.log("Que mala onda, dejame practicar")
-// }
-// else if (opc === ""){
-//     console.log("Tenes que ingresar si o no")
-// }
+for(let i = 0; i <= 1; i++){
+    
+    alert("Bienvenido, a continuación solicitaremos algunos datos para adjudicarle el turno");
+    let receta = prompt("¿Posee receta confeccionada por un oftalmólogo?");
 
-/*--------Desafio de funciones js--------*/
-
-// function pago (modoDePago){
-//     if(modoDePago === "efectivo" || modoDePago === "Efectivo"){
-//         console.log("El precio de contado tiene un 10% de descuento")
-//     }
-//     else if(modoDePago === "cuotas" || modoDePago === "Cuotas"){
-//         for (let i = 3 ; i <= 12 ; i+=3){
-//             if(i === 3){
-//                 console.log(`Puede hacerlo en ${i} cuotas`)
-//             }
-//             else if (i === 6 || i === 9){
-//                 console.log(`en ${i} cuotas`)
-//             }
-//             else if (i === 12){
-//                 console.log(`o hasta en ${i} cuotas`)
-//             }
-//         }
-//     }
-// }
-
-// modoDePago= prompt("¿De que manera desea realizar el pago? Efectivo o en Cuotas")
-
-// pago(modoDePago)
-
-nombrePrompt = prompt("Ingrese su Nombre");
-apellidoPrompt = prompt("Ahora ingrese su Apellido");
-edadPrompt = prompt ("¿Cuál es su edad?");
-tarjetaDeCredito= prompt("¿Qué tarjeta posee?")
-
-function nuevoCliente (nombre,apellido, edad) {
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.edad = edad;
+    if(receta === "si" || receta === "Si" || receta === "SI"){
+        
+        let nombreIngresado = prompt("Ingrese su nombre");
+        let apellidoIngresado = prompt ("Ingrese su apellido");
+        let diaTurnoIngresado = prompt ("¿Qué día podría asistir? (Utilizar el siguiente formato DD/MM")
+        let horaTurnoIngresado = prompt("¿En qué horario va a concurrir? (Utilizar el siguien formato XX:XX)")
+        
+        // let comprobacionTurno = turnosAsignados.some((elemento) => {
+        //     return elemento.horaTurno == horaTurnoIngresado
+        // })
+        // if(comprobacionTurno = true){
+        //     alert("El turno ya se encuentra ocupado")
+        // }
+        
+        function nuevoTurno (nombre,apellido,diaTurno,horaTurno){
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.diaTurno = diaTurno;
+            this.horaTurno = horaTurno;
+        }
+        
+        turnosAsignados.push(new nuevoTurno(nombreIngresado,apellidoIngresado,diaTurnoIngresado,horaTurnoIngresado));
+        
+    }
+    else if (receta === "no" || receta === "No" || receta === "NO"){
+        alert("Debe primero, consultar a su oftalmólogo");
+    }
+    else{
+        alert("Usted debe ingresar:  si / no");
+    }
+    
 }
 
-cliente1 = new nuevoCliente(nombrePrompt,apellidoPrompt,edadPrompt);
 
-arrayClientes= [];
-arrayTarjetas = [];
 
-arrayClientes.push(cliente1);
-arrayTarjetas.push(tarjetaDeCredito);
-
-console.log(arrayClientes);
-console.log(arrayTarjetas);
+console.log(turnosAsignados)
 
 
 
