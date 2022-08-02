@@ -393,18 +393,34 @@ section .contenedorNosotros{
 }
 
 
+#formulario{
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+}
 
-
+.botones{
+    display: flex;
+    justify-content: center;
+}
 .formulario .mb-3{
     padding: 10px 400px;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    button{
-        padding: 10px 30px;
-        margin: 20px;
-    }
+#submit{
+    margin: 20px;
 }
+
+#reset{
+    margin: 20px;
+}
+
+// .buttons{
+//     display: flex;
+//     justify-content: space-around;
+//     margin: auto;
+//     button{
+//         padding: 10px 30px;
+//         margin: 20px;
+//     }
+// }
